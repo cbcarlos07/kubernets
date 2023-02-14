@@ -4,14 +4,14 @@ metadata:
   name: mysql-pod
   labels:
     name: mysql-pod
-  spec:
-    containers:
-      - name: mysql
-        image: mysql:latest
-        env:
-          - name: "MYSQL_DATABASE"
-            value: "meuBanco"
-          - name: "MYSQL_ROOT_PASSWORD"
-            value: "Senha123"
-        ports:
-          - containerPort: 3306
+spec:
+  containers:
+    - name: mysql
+      image: mysql:latest
+      env:
+        - name: "MYSQL_DATABASE"
+          value: "meuBanco"
+        - name: "MYSQL_ROOT_PASSWORD"
+          value: "Senha123"
+      ports:
+        - containerPort: 3306
